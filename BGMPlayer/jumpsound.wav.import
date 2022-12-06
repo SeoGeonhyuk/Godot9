@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/jumpsound.wav-503bb6d58bab071fe05009cf337272fe.sample"
+path="res://.import/jumpsound.wav-1cc29a57a226ca1173bd95b58d073a4d.sample"
 
 [deps]
 
-source_file="res://jumpsound.wav"
-dest_files=[ "res://.import/jumpsound.wav-503bb6d58bab071fe05009cf337272fe.sample" ]
+source_file="res://BGMPlayer/jumpsound.wav"
+dest_files=[ "res://.import/jumpsound.wav-1cc29a57a226ca1173bd95b58d073a4d.sample" ]
 
 [params]
 
