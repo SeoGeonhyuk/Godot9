@@ -56,7 +56,7 @@ func get_input(delta) :
 		velocity += Vector2.DOWN * earth_gravity * low_jump_gravity_scale * delta
 	if on_floor:
 		if Input.is_action_just_pressed("jump"):
-			get_parent().get_node('jumpPlayer').play()
+			SoundManager.Jump_sound.play()
 			ini_jump = jump_power 
 			velocity = Vector2.UP * jump_power* run_speed / 2
 			jump_released = false

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Imagine Dragons, twocolors-01-Bones (twocolors Remix).mp3-b9d81fb51049367e69ae995c55c2d310.mp3str"
+
+[deps]
+
+source_file="res://BGMPlayer/Imagine Dragons, twocolors-01-Bones (twocolors Remix).mp3"
+dest_files=[ "res://.import/Imagine Dragons, twocolors-01-Bones (twocolors Remix).mp3-b9d81fb51049367e69ae995c55c2d310.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
