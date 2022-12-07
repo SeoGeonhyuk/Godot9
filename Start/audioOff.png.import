@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brick1024.png-662c7b6d960a5764e136e41d349f2ed2.stex"
+path="res://.import/audioOff.png-35518e82f973607024196866ada61048.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/brick1024.png"
-dest_files=[ "res://.import/brick1024.png-662c7b6d960a5764e136e41d349f2ed2.stex" ]
+source_file="res://Start/audioOff.png"
+dest_files=[ "res://.import/audioOff.png-35518e82f973607024196866ada61048.stex" ]
 
 [params]
 
