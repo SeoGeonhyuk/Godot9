@@ -30,7 +30,6 @@ SoundManager="*res://tscn/SoundManager.tscn"
 Network="*res://Network.gd"
 Checkpoint="*res://Checkpoint.gd"
 <<<<<<<UpdatedupstreamNetwork="*res://Network.gd"
-Network="*res://Network.gd"
 
 [editor]
 
