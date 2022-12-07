@@ -84,10 +84,10 @@ scale = Vector2( 0.21436, 0.21331 )
 texture = ExtResource( 3 )
 
 [node name="ExitButton" type="MenuButton" parent="Exit"]
-margin_left = 695.0
-margin_top = 159.0
-margin_right = 751.0
-margin_bottom = 183.0
+margin_left = 641.0
+margin_top = 135.0
+margin_right = 807.0
+margin_bottom = 218.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Exit"
