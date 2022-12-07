@@ -29,6 +29,7 @@ config/icon="res://icon.png"
 SoundManager="*res://tscn/SoundManager.tscn"
 Checkpoint="*res://Checkpoint.gd"
 <<<<<<<UpdatedupstreamNetwork="*res://Network.gd"
+Network="*res://Network.gd"
 
 [editor]
 
