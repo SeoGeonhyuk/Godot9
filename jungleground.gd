@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-signal lava_ended
+signal jungle_ended
 
 #func enter_tree():
 #	if Checkpoint.last_position:
@@ -8,4 +8,5 @@ signal lava_ended
 
 
 func _on_crowns_body_entered(body):
-	emit_signal("lava_ended")
+	emit_signal("jungle_ended")
+

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Start/startscreen.png" type="Texture" id=1]
 [ext_resource path="res://Start/p1.png" type="Texture" id=2]
@@ -9,8 +9,10 @@
 [ext_resource path="res://Start/audioOff.png" type="Texture" id=7]
 [ext_resource path="res://WorldSelection/jungle.png" type="Texture" id=8]
 [ext_resource path="res://Start/Start.gd" type="Script" id=9]
+[ext_resource path="res://WorldSelection/yellow_sliderLeft.png" type="Texture" id=10]
 [ext_resource path="res://WorldSelection/fire.png" type="Texture" id=11]
 [ext_resource path="res://WorldSelection/ice.png" type="Texture" id=12]
+[ext_resource path="res://WorldSelection/yellow_sliderRight.png" type="Texture" id=13]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 6 )
@@ -82,31 +84,39 @@ position = Vector2( 89, 517 )
 texture = ExtResource( 7 )
 
 [node name="Jungle" type="Sprite" parent="."]
-position = Vector2( 441, 395 )
-scale = Vector2( 0.174683, 0.189616 )
+position = Vector2( 432.507, 403.615 )
+scale = Vector2( 0.148184, 0.159493 )
 texture = ExtResource( 8 )
 
 [node name="Jungle2" type="Sprite" parent="."]
-position = Vector2( 587, 395 )
-scale = Vector2( 0.174683, 0.189616 )
+position = Vector2( 593.493, 403.615 )
+scale = Vector2( 0.154424, 0.159493 )
 texture = ExtResource( 8 )
 
 [node name="Ice" type="Sprite" parent="."]
-position = Vector2( 441, 276 )
-scale = Vector2( 0.284747, 0.275252 )
+position = Vector2( 430.53, 287.952 )
+scale = Vector2( 0.23501, 0.219402 )
 texture = ExtResource( 12 )
 
 [node name="Ice2" type="Sprite" parent="."]
-position = Vector2( 587, 276 )
-scale = Vector2( 0.284747, 0.275252 )
+position = Vector2( 597.47, 286.952 )
+scale = Vector2( 0.23501, 0.224075 )
 texture = ExtResource( 12 )
 
 [node name="Fire" type="Sprite" parent="."]
-position = Vector2( 441, 506 )
-scale = Vector2( 0.141365, 0.141365 )
+position = Vector2( 432.616, 513.375 )
+scale = Vector2( 0.120112, 0.120822 )
 texture = ExtResource( 11 )
 
 [node name="Fire2" type="Sprite" parent="."]
-position = Vector2( 587, 506 )
-scale = Vector2( 0.141365, 0.141365 )
+position = Vector2( 596.884, 513.875 )
+scale = Vector2( 0.11631, 0.119429 )
 texture = ExtResource( 11 )
+
+[node name="YellowSliderRight" type="Sprite" parent="."]
+position = Vector2( 374, 291 )
+texture = ExtResource( 13 )
+
+[node name="YellowSliderLeft" type="Sprite" parent="."]
+position = Vector2( 658, 291 )
+texture = ExtResource( 10 )

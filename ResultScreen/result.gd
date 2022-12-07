@@ -1,5 +1,6 @@
 extends Node2D
 
+
 #if jungle_ended:
 #	$worlds/Jungle.visible = true
 #	$worlds/Fire.visible = false

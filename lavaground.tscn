@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://assets/LavaTile set.png" type="Texture" id=1]
 [ext_resource path="res://assets/backgroundlava.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://obstacles/crown.tscn" type="PackedScene" id=4]
 [ext_resource path="res://obstacles/trap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://obstacles/ball.tscn" type="PackedScene" id=6]
+[ext_resource path="res://lavaground.gd" type="Script" id=7]
 
 [sub_resource type="TileSet" id=1]
 0/name = "LavaTile set.png 0"
@@ -134,6 +135,7 @@ extents = Vector2( 160, 15.25 )
 extents = Vector2( 17, 719.5 )
 
 [node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource( 7 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_top = -661.0
@@ -583,3 +585,5 @@ scale = Vector2( 0.1, 0.1 )
 
 [node name="crowns" parent="." instance=ExtResource( 4 )]
 position = Vector2( 6622, 451 )
+
+[connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]
