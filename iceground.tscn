@@ -1,11 +1,19 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=39 format=2]
+=======
+[gd_scene load_steps=37 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://assets/igloo.png" type="Texture" id=1]
 [ext_resource path="res://assets/backgroundForestwinter.png" type="Texture" id=2]
 [ext_resource path="res://tscn/Player.tscn" type="PackedScene" id=3]
+<<<<<<< Updated upstream
 [ext_resource path="res://obstacles/crown.tscn" type="PackedScene" id=4]
 [ext_resource path="res://obstacles/trap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://obstacles/ball.tscn" type="PackedScene" id=6]
+=======
+[ext_resource path="res://tscn/fall.tscn" type="PackedScene" id=4]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSet" id=1]
 0/name = "igloo.png 0"
@@ -502,6 +510,7 @@ smoothing_enabled = true
 position = Vector2( -16, 64.5 )
 shape = SubResource( 32 )
 
+<<<<<<< Updated upstream
 [node name="traps14" parent="." instance=ExtResource( 5 )]
 position = Vector2( 6480, 468 )
 scale = Vector2( 0.033, 0.1 )
@@ -564,3 +573,7 @@ scale = Vector2( 0.033, 0.1 )
 [node name="traps8" parent="." instance=ExtResource( 5 )]
 position = Vector2( 5199, 462 )
 scale = Vector2( 0.033, 0.1 )
+=======
+[node name="fall" parent="." instance=ExtResource( 4 )]
+position = Vector2( 12, 626 )
+>>>>>>> Stashed changes

@@ -1,10 +1,11 @@
 extends KinematicBody2D
 
 onready var animation = $AnimatedSprite
-var velocity = Vector2()
+var velocity = Vector2().normalized()
 
 #var - speed
 export (int) var run_speed = 2
+export (int) var walk_speed = 2
 var run_bool = false
 
 
@@ -33,12 +34,12 @@ func get_input(delta) :
 	var left = Input.is_action_pressed('left')
 
 	if left:
-		velocity.x -=run_speed 
+		velocity.x -= walk_speed * run_speed 
 		#velocity.x = max(velocity.x-jump_speed,-Max_jump)
 		animation.flip_h = false
 		animation.play("RunRight")
 	elif right:
-		velocity.x +=run_speed
+		velocity.x += walk_speed * run_speed
 		#velocity.x = min(velocity.x+run_speed,Max_speed)
 		animation.flip_h = true
 		animation.play("RunRight")
@@ -58,7 +59,7 @@ func get_input(delta) :
 		if Input.is_action_just_pressed("jump"):
 			SoundManager.Jump_sound.play()
 			ini_jump = jump_power 
-			velocity = Vector2.UP * jump_power* run_speed / 2
+			velocity += Vector2.UP * jump_power* run_speed / 2
 			jump_released = false
 	
 	if is_on_floor(): on_floor = true
@@ -67,22 +68,20 @@ func get_input(delta) :
 	
 	
 	if Input.is_action_pressed('run'):
-		run_speed = 4
+		run_speed = 2.5
 	else :
-		run_speed = 2
+		run_speed = 1.5
 
 	
 
 func _physics_process(delta):
-
+	
 	get_input(delta)
 		
 	velocity.y = velocity.y + gravity	
 	
 	
 	velocity = move_and_slide(velocity,Vector2(0,-1))
-	
-	
 
 	
 	

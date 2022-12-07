@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=43 format=2]
+=======
+[gd_scene load_steps=42 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://assets/jungle tileset.png" type="Texture" id=1]
 [ext_resource path="res://assets/parallax background_jungle/plx-5.png" type="Texture" id=2]
@@ -8,8 +12,12 @@
 [ext_resource path="res://assets/parallax background_jungle/plx-2.png" type="Texture" id=6]
 [ext_resource path="res://obstacles/trap.tscn" type="PackedScene" id=7]
 [ext_resource path="res://tscn/Player.tscn" type="PackedScene" id=8]
+<<<<<<< Updated upstream
 [ext_resource path="res://obstacles/ball.tscn" type="PackedScene" id=9]
 [ext_resource path="res://obstacles/crown.tscn" type="PackedScene" id=10]
+=======
+[ext_resource path="res://tscn/fall.tscn" type="PackedScene" id=9]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSet" id=1]
 0/name = "jungle tileset.png 0"
@@ -545,6 +553,7 @@ shape = SubResource( 31 )
 position = Vector2( -16, 64.5 )
 shape = SubResource( 32 )
 
+<<<<<<< Updated upstream
 [node name="traps" parent="." instance=ExtResource( 7 )]
 position = Vector2( 4627, 502 )
 scale = Vector2( 0.033, 0.1 )
@@ -607,3 +616,7 @@ scale = Vector2( 0.1, 0.1 )
 
 [node name="crowns" parent="." instance=ExtResource( 10 )]
 position = Vector2( 6622, 516 )
+=======
+[node name="fall" parent="." instance=ExtResource( 9 )]
+position = Vector2( 3, 621 )
+>>>>>>> Stashed changes

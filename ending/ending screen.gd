@@ -10,7 +10,7 @@ var credit_list = [
 	["Made by","Hyeonhongseok"],
 	["Made by","kimkyeongyeon"],
 	["Background Music","Imagine dragons - Borns(remix)"],
-	["Ending Music","Song_title"],
+	["Ending Music","Rihanna - Born Again"],
 	["Font","esamanru Bold"],
 	["Thank you","CMP"],
 	["Thank you","Teemu"],
