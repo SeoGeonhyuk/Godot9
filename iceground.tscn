@@ -116,8 +116,9 @@ extents = Vector2( 16, 608.5 )
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 2.0
 margin_top = -537.0
-margin_right = 6874.0
+margin_right = 6876.0
 margin_bottom = 669.0
 texture = ExtResource( 2 )
 stretch_mode = 2
