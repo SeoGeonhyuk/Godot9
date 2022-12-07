@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Rihanna-20-Born Again.mp3-12c064d3893dd081186834c8d337144b.mp3str"
+
+[deps]
+
+source_file="res://BGMPlayer/Rihanna-20-Born Again.mp3"
+dest_files=[ "res://.import/Rihanna-20-Born Again.mp3-12c064d3893dd081186834c8d337144b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
