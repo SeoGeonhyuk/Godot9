@@ -7,18 +7,19 @@ func _ready():
 	SignalBus.connect("ice_ended",self,"_ice_ended")
 	
 func _jungle_ended():
-	$worlds/Jungle.visible = true
-	$worlds/Fire.visible = false
-	$worlds/Ice.visible = false
+	$world/Jungle.visible = true
+	$world/Fire.visible = false
+	$world/Ice.visible = false
 	
 func _lava_ended():	
-	$worlds/Jungle.visible = false
-	$worlds/Fire.visible = true
-	$worlds/Ice.visible = false
+	$world/Jungle.visible = false
+	$world/Fire.visible = true
+	$world/Ice.visible = false
+	
 func _ice_ended():
-	$worlds/Jungle.visible = false
-	$worlds/Fire.visible = false
-	$worlds/Ice.visible = true
+	$world/Jungle.visible = false
+	$world/Fire.visible = false
+	$world/Ice.visible = true
 
 #if lose:
 #	$win/win.visible = false

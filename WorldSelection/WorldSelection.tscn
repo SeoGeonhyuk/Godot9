@@ -78,75 +78,81 @@ position = Vector2( 432.507, 403.615 )
 scale = Vector2( 0.148184, 0.159493 )
 texture = ExtResource( 8 )
 
-[node name="1pJungleButton" type="MenuButton" parent="1p\'s_world/Jungle"]
-margin_left = -307.0
-margin_top = -261.0
-margin_right = 307.0
-margin_bottom = 259.0
-
 [node name="Ice" type="Sprite" parent="1p\'s_world"]
 position = Vector2( 430.53, 287.952 )
 scale = Vector2( 0.23501, 0.219402 )
 texture = ExtResource( 12 )
-
-[node name="1pIceButton" type="MenuButton" parent="1p\'s_world/Ice"]
-margin_left = -194.0
-margin_top = -191.0
-margin_right = 193.0
-margin_bottom = 187.0
 
 [node name="Fire" type="Sprite" parent="1p\'s_world"]
 position = Vector2( 432.616, 513.375 )
 scale = Vector2( 0.120112, 0.120822 )
 texture = ExtResource( 11 )
 
-[node name="1pLavaButton" type="MenuButton" parent="1p\'s_world/Fire"]
-margin_left = -380.0
-margin_top = -334.0
-margin_right = 361.0
-margin_bottom = 328.0
+[node name="1pLavaButton" type="MenuButton" parent="1p\'s_world"]
+margin_left = 384.0
+margin_top = 472.0
+margin_right = 485.0
+margin_bottom = 557.0
+
+[node name="1pJungleButton" type="MenuButton" parent="1p\'s_world"]
+margin_left = 388.0
+margin_top = 361.0
+margin_right = 476.0
+margin_bottom = 446.0
+
+[node name="1pIceButton" type="MenuButton" parent="1p\'s_world"]
+margin_left = 385.0
+margin_top = 246.0
+margin_right = 477.0
+margin_bottom = 332.0
 
 [node name="2p\'s_world" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Jungle2" type="Sprite" parent="2p\'s_world"]
-position = Vector2( 593.493, 403.615 )
+position = Vector2( 597.493, 403.615 )
 scale = Vector2( 0.154424, 0.159493 )
 texture = ExtResource( 8 )
-
-[node name="2pJungleButton" type="MenuButton" parent="2p\'s_world/Jungle2"]
-margin_left = -308.0
-margin_top = -273.0
-margin_right = 295.0
-margin_bottom = 259.0
 
 [node name="Ice2" type="Sprite" parent="2p\'s_world"]
 position = Vector2( 597.47, 286.952 )
 scale = Vector2( 0.23501, 0.224075 )
 texture = ExtResource( 12 )
 
-[node name="2pIceButton" type="MenuButton" parent="2p\'s_world/Ice2"]
-margin_left = -189.0
-margin_top = -192.0
-margin_right = 185.0
-margin_bottom = 196.0
-
 [node name="Fire2" type="Sprite" parent="2p\'s_world"]
-position = Vector2( 596.884, 513.875 )
+position = Vector2( 597.884, 513.875 )
 scale = Vector2( 0.11631, 0.119429 )
 texture = ExtResource( 11 )
 
-[node name="2pLavaButton" type="MenuButton" parent="2p\'s_world/Fire2"]
-margin_left = -386.0
-margin_top = -342.0
-margin_right = 388.0
-margin_bottom = 361.0
+[node name="2pLavaButton" type="MenuButton" parent="2p\'s_world"]
+margin_left = 548.0
+margin_top = 471.0
+margin_right = 643.0
+margin_bottom = 558.0
 
-[node name="GreenSliderLeft" type="Sprite" parent="."]
-position = Vector2( 658, 290 )
+[node name="2pIceButton" type="MenuButton" parent="2p\'s_world"]
+margin_left = 553.0
+margin_top = 244.0
+margin_right = 645.0
+margin_bottom = 330.0
+
+[node name="2pJungleButton" type="MenuButton" parent="2p\'s_world"]
+margin_left = 550.0
+margin_top = 359.0
+margin_right = 643.0
+margin_bottom = 444.0
+
+[node name="1p\'s_select" type="Node2D" parent="."]
+
+[node name="GreenSliderLeft" type="Sprite" parent="1p\'s_select"]
 texture = ExtResource( 10 )
 
-[node name="BlueSliderRight" type="Sprite" parent="."]
-position = Vector2( 371, 287 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="1p\'s_select"]
+
+[node name="2p\'s_select" type="Node2D" parent="."]
+
+[node name="BlueSliderRight" type="Sprite" parent="2p\'s_select"]
 texture = ExtResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="2p\'s_select"]
