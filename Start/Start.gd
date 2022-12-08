@@ -15,10 +15,12 @@ func _on_MusicButton_pressed():
 		$Music/AudioOn.visible = true
 		$Music/AudioOff.visible = false
 		bgm.play()
-		
-
 
 
 
 func _on_PlayButton_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://WorldSelection/WorldSelection.tscn")
+
+
+func _on_ExitButton_pressed():
+	get_tree().quit()

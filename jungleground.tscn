@@ -608,6 +608,6 @@ position = Vector2( 6322, 552 )
 scale = Vector2( 0.1, 0.1 )
 
 [node name="crowns" parent="." instance=ExtResource( 10 )]
-position = Vector2( 6623, 517 )
+position = Vector2( 447, 286 )
 
 [connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]

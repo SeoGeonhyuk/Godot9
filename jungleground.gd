@@ -1,6 +1,5 @@
 extends StaticBody2D
 
-signal jungle_ended
 
 #func enter_tree():
 #	if Checkpoint.last_position:
@@ -8,5 +7,6 @@ signal jungle_ended
 
 
 func _on_crowns_body_entered(body):
-	emit_signal("jungle_ended")
+	SignalBus.emit_signal("jungle_ended")
+	get_tree().change_scene("res://ResultScreen/result.tscn")
 

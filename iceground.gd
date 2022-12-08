@@ -7,5 +7,5 @@ extends StaticBody2D
 
 
 func _on_crowns_body_entered(body):
-	SignalBus.emit_signal("lava_ended")
+	SignalBus.emit_signal("ice_ended")
 	get_tree().change_scene("res://ResultScreen/result.tscn")

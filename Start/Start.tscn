@@ -115,4 +115,5 @@ margin_bottom = 558.0
 stream = ExtResource( 10 )
 
 [connection signal="pressed" from="Play/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="Exit/ExitButton" to="." method="_on_ExitButton_pressed"]
 [connection signal="pressed" from="Music/MusicButton" to="." method="_on_MusicButton_pressed"]

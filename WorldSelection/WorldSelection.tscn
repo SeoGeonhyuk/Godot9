@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Start/startscreen.png" type="Texture" id=1]
 [ext_resource path="res://Start/p1.png" type="Texture" id=2]
@@ -6,13 +6,12 @@
 [ext_resource path="res://Start/p2.png" type="Texture" id=4]
 [ext_resource path="res://WorldSelection/ButtonBlue.png" type="Texture" id=5]
 [ext_resource path="res://Start/kenvector_future.ttf" type="DynamicFontData" id=6]
-[ext_resource path="res://Start/audioOff.png" type="Texture" id=7]
+[ext_resource path="res://WorldSelection/blue_sliderRight.png" type="Texture" id=7]
 [ext_resource path="res://WorldSelection/jungle.png" type="Texture" id=8]
-[ext_resource path="res://Start/Start.gd" type="Script" id=9]
-[ext_resource path="res://WorldSelection/yellow_sliderLeft.png" type="Texture" id=10]
+[ext_resource path="res://WorldSelection/WorldSelection.gd" type="Script" id=9]
+[ext_resource path="res://WorldSelection/green_sliderLeft.png" type="Texture" id=10]
 [ext_resource path="res://WorldSelection/fire.png" type="Texture" id=11]
 [ext_resource path="res://WorldSelection/ice.png" type="Texture" id=12]
-[ext_resource path="res://WorldSelection/yellow_sliderRight.png" type="Texture" id=13]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 6 )
@@ -70,53 +69,84 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Ready"
 
-[node name="Exit" type="Control" parent="."]
+[node name="1p\'s_world" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 
-[node name="Music" type="Control" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-
-[node name="AudioOff" type="Sprite" parent="Music"]
-visible = false
-position = Vector2( 89, 517 )
-texture = ExtResource( 7 )
-
-[node name="Jungle" type="Sprite" parent="."]
+[node name="Jungle" type="Sprite" parent="1p\'s_world"]
 position = Vector2( 432.507, 403.615 )
 scale = Vector2( 0.148184, 0.159493 )
 texture = ExtResource( 8 )
 
-[node name="Jungle2" type="Sprite" parent="."]
-position = Vector2( 593.493, 403.615 )
-scale = Vector2( 0.154424, 0.159493 )
-texture = ExtResource( 8 )
+[node name="1pJungleButton" type="MenuButton" parent="1p\'s_world/Jungle"]
+margin_left = -307.0
+margin_top = -261.0
+margin_right = 307.0
+margin_bottom = 259.0
 
-[node name="Ice" type="Sprite" parent="."]
+[node name="Ice" type="Sprite" parent="1p\'s_world"]
 position = Vector2( 430.53, 287.952 )
 scale = Vector2( 0.23501, 0.219402 )
 texture = ExtResource( 12 )
 
-[node name="Ice2" type="Sprite" parent="."]
-position = Vector2( 597.47, 286.952 )
-scale = Vector2( 0.23501, 0.224075 )
-texture = ExtResource( 12 )
+[node name="1pIceButton" type="MenuButton" parent="1p\'s_world/Ice"]
+margin_left = -194.0
+margin_top = -191.0
+margin_right = 193.0
+margin_bottom = 187.0
 
-[node name="Fire" type="Sprite" parent="."]
+[node name="Fire" type="Sprite" parent="1p\'s_world"]
 position = Vector2( 432.616, 513.375 )
 scale = Vector2( 0.120112, 0.120822 )
 texture = ExtResource( 11 )
 
-[node name="Fire2" type="Sprite" parent="."]
+[node name="1pLavaButton" type="MenuButton" parent="1p\'s_world/Fire"]
+margin_left = -380.0
+margin_top = -334.0
+margin_right = 361.0
+margin_bottom = 328.0
+
+[node name="2p\'s_world" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Jungle2" type="Sprite" parent="2p\'s_world"]
+position = Vector2( 593.493, 403.615 )
+scale = Vector2( 0.154424, 0.159493 )
+texture = ExtResource( 8 )
+
+[node name="2pJungleButton" type="MenuButton" parent="2p\'s_world/Jungle2"]
+margin_left = -308.0
+margin_top = -273.0
+margin_right = 295.0
+margin_bottom = 259.0
+
+[node name="Ice2" type="Sprite" parent="2p\'s_world"]
+position = Vector2( 597.47, 286.952 )
+scale = Vector2( 0.23501, 0.224075 )
+texture = ExtResource( 12 )
+
+[node name="2pIceButton" type="MenuButton" parent="2p\'s_world/Ice2"]
+margin_left = -189.0
+margin_top = -192.0
+margin_right = 185.0
+margin_bottom = 196.0
+
+[node name="Fire2" type="Sprite" parent="2p\'s_world"]
 position = Vector2( 596.884, 513.875 )
 scale = Vector2( 0.11631, 0.119429 )
 texture = ExtResource( 11 )
 
-[node name="YellowSliderRight" type="Sprite" parent="."]
-position = Vector2( 374, 291 )
-texture = ExtResource( 13 )
+[node name="2pLavaButton" type="MenuButton" parent="2p\'s_world/Fire2"]
+margin_left = -386.0
+margin_top = -342.0
+margin_right = 388.0
+margin_bottom = 361.0
 
-[node name="YellowSliderLeft" type="Sprite" parent="."]
-position = Vector2( 658, 291 )
+[node name="GreenSliderLeft" type="Sprite" parent="."]
+position = Vector2( 658, 290 )
 texture = ExtResource( 10 )
+
+[node name="BlueSliderRight" type="Sprite" parent="."]
+position = Vector2( 371, 287 )
+texture = ExtResource( 7 )
