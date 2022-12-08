@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://assets/jungle tileset.png" type="Texture" id=1]
 [ext_resource path="res://assets/parallax background_jungle/plx-5.png" type="Texture" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://obstacles/ball.tscn" type="PackedScene" id=9]
 [ext_resource path="res://obstacles/crown.tscn" type="PackedScene" id=10]
 [ext_resource path="res://jungleground.gd" type="Script" id=11]
+[ext_resource path="res://tscn/fall.tscn" type="PackedScene" id=12]
+[ext_resource path="res://obstacles/obstacle.gd" type="Script" id=13]
 
 [sub_resource type="TileSet" id=1]
 0/name = "jungle tileset.png 0"
@@ -547,67 +549,75 @@ shape = SubResource( 31 )
 position = Vector2( -16, 64.5 )
 shape = SubResource( 32 )
 
-[node name="traps" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4627, 502 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4659, 502 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4779, 502 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps4" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4713, 502 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps5" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4746, 502 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps6" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4691, 502 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps7" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5104, 442 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps8" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5104, 470 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps9" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5585, 468 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps10" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5617, 468 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps11" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5680, 437 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps12" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5808, 436 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps13" parent="." instance=ExtResource( 7 )]
-position = Vector2( 5935, 436 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps14" parent="." instance=ExtResource( 7 )]
-position = Vector2( 6384, 468 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="balls" parent="." instance=ExtResource( 9 )]
-position = Vector2( 6322, 552 )
-scale = Vector2( 0.1, 0.1 )
-
 [node name="crowns" parent="." instance=ExtResource( 10 )]
 position = Vector2( 447, 286 )
 
+[node name="obstacle" type="Node2D" parent="."]
+script = ExtResource( 13 )
+
+[node name="traps" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4627, 502 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps2" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4659, 502 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps3" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4779, 502 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps4" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4713, 502 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps5" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4746, 502 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps6" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4691, 502 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps7" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5104, 442 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps8" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5104, 470 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps9" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5585, 468 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps10" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5617, 468 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps11" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5680, 437 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps12" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5808, 436 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps13" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5935, 436 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps14" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 6384, 468 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="balls" parent="obstacle" instance=ExtResource( 9 )]
+position = Vector2( 6322, 552 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="fall" parent="obstacle" instance=ExtResource( 12 )]
+position = Vector2( -47, 644 )
+
 [connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]
+[connection signal="die" from="obstacle" to="Player" method="_on_Node2D_die"]
+[connection signal="die" from="obstacle" to="Player" method="_on_obstacle_die"]

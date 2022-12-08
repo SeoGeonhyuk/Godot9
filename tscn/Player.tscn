@@ -6,7 +6,7 @@
 [ext_resource path="res://ending/esamanru Bold.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 21, 21.5 )
+extents = Vector2( 6.5, 14.5 )
 
 [sub_resource type="Animation" id=3]
 length = 0.001
@@ -59,7 +59,7 @@ collision_mask = 2
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -0.5 )
+position = Vector2( -0.5, -7.5 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayerimage" type="AnimationPlayer" parent="."]

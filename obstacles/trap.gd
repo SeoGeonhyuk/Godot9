@@ -1,5 +1,6 @@
 extends Area2D
 
 
-func _on_fall_body_entered(body):
+func _on_traps_body_entered(body):
 	Obstacle.emit_signal("die")
+	print(10)
