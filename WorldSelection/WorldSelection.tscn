@@ -101,10 +101,10 @@ margin_right = 476.0
 margin_bottom = 446.0
 
 [node name="1pIceButton" type="MenuButton" parent="1p\'s_world"]
-margin_left = 385.0
-margin_top = 246.0
-margin_right = 477.0
-margin_bottom = 332.0
+margin_left = 392.0
+margin_top = 241.0
+margin_right = 484.0
+margin_bottom = 327.0
 
 [node name="2p\'s_world" type="Control" parent="."]
 margin_right = 40.0

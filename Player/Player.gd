@@ -93,3 +93,4 @@ func _on_Node2D_die():
 func _on_obstacle_die():
 	print(9999)
 	get_parent().get_node("Player").global_position = Checkpoint.last_position
+	

@@ -119,7 +119,7 @@ extents = Vector2( 32, 14.5 )
 [sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 16, 608.5 )
 
-[node name="StaticBody2D" type="StaticBody2D"]
+[node name="iceground" type="StaticBody2D"]
 script = ExtResource( 9 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -583,3 +583,4 @@ position = Vector2( 341, 431 )
 
 [connection signal="body_entered" from="flag" to="flag" method="_on_flag_body_entered"]
 [connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]
+[connection signal="body_entered" from="crowns" to="Player" method="_on_crowns_body_entered"]
