@@ -35,6 +35,6 @@ func join_server() -> void:
 	
 func _connected_to_server() -> void:
 	print("Successfully connected to the server")
-	
+
 func _server_disconnected() -> void:
 	print("Disconnected from the server")
