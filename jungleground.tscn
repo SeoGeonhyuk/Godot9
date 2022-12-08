@@ -549,8 +549,8 @@ shape = SubResource( 31 )
 position = Vector2( -16, 64.5 )
 shape = SubResource( 32 )
 
-[node name="crowns" parent="." instance=ExtResource( 10 )]
-position = Vector2( 447, 286 )
+[node name="crowns" parent="CollisionShape2D89" instance=ExtResource( 10 )]
+position = Vector2( 463, 221.5 )
 
 [node name="obstacle" type="Node2D" parent="."]
 script = ExtResource( 13 )
@@ -618,6 +618,6 @@ scale = Vector2( 0.1, 0.1 )
 [node name="fall" parent="obstacle" instance=ExtResource( 12 )]
 position = Vector2( -47, 644 )
 
-[connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]
+[connection signal="body_entered" from="CollisionShape2D89/crowns" to="." method="_on_crowns_body_entered"]
 [connection signal="die" from="obstacle" to="Player" method="_on_Node2D_die"]
 [connection signal="die" from="obstacle" to="Player" method="_on_obstacle_die"]

@@ -12,7 +12,7 @@ var run_bool = false
 #var - jump
 export var fall_gravity_scale := 150.0
 export var low_jump_gravity_scale := 100.0
-export var jump_power := 500.0
+export var jump_power := 400.0
 export (int) var ini_jump = 0
 var jump_released = false
 var earth_gravity = 9.807
@@ -69,9 +69,9 @@ func get_input(delta) :
 	
 	
 	if Input.is_action_pressed('run'):
-		run_speed = 2.5
+		run_speed = 2.2
 	else :
-		run_speed = 1.5
+		run_speed = 2
 
 	
 
