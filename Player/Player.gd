@@ -25,7 +25,8 @@ export (int) var Air_Resistance = 0.07
 const gravity = 8
 const Max_speed = 300
 
-
+func _ready():
+	Checkpoint.last_position = get_parent().get_node("Player").global_position
 
 
 
@@ -83,4 +84,7 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity,Vector2(0,-1))
 
-	
+
+
+func _on_fall_die():
+	get_parent().get_node("Player").global_position = Checkpoint.last_position
