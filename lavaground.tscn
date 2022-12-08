@@ -587,3 +587,4 @@ scale = Vector2( 0.1, 0.1 )
 position = Vector2( 6622, 451 )
 
 [connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]
+[connection signal="body_entered" from="crowns" to="Player" method="_on_crowns_body_entered"]

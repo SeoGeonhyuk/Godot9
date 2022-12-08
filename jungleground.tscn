@@ -618,6 +618,7 @@ position = Vector2( -47, 644 )
 [node name="crowns" parent="." instance=ExtResource( 10 )]
 position = Vector2( 447, 286 )
 
-[connection signal="die" from="obstacle" to="Player" method="_on_obstacle_die"]
 [connection signal="die" from="obstacle" to="Player" method="_on_Node2D_die"]
+[connection signal="die" from="obstacle" to="Player" method="_on_obstacle_die"]
 [connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]
+[connection signal="body_entered" from="crowns" to="Player" method="_on_crowns_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://ResultScreen/result.gd" type="Script" id=1]
 [ext_resource path="res://Start/kenvector_future.ttf" type="DynamicFontData" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://WorldSelection/jungle.png" type="Texture" id=5]
 [ext_resource path="res://WorldSelection/ice.png" type="Texture" id=6]
 [ext_resource path="res://WorldSelection/fire.png" type="Texture" id=7]
+[ext_resource path="res://ResultScreen/score.gd" type="Script" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 40
@@ -114,9 +115,12 @@ custom_fonts/font = SubResource( 3 )
 text = "stage 3"
 
 [node name="score" type="Label" parent="."]
-margin_left = 625.0
-margin_top = 295.0
-margin_right = 794.0
-margin_bottom = 321.0
+margin_left = 629.0
+margin_top = 309.0
+margin_right = 798.0
+margin_bottom = 335.0
 custom_fonts/font = SubResource( 4 )
 text = "score = 0"
+script = ExtResource( 8 )
+
+[connection signal="score_added" from="." to="score" method="_on_result_score_added"]

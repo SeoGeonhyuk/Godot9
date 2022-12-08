@@ -94,3 +94,6 @@ func _on_obstacle_die():
 	print(9999)
 	get_parent().get_node("Player").global_position = Checkpoint.last_position
 	
+
+func _on_crowns_body_entered(body):
+	SignalBus.Player1Score += 1
