@@ -28,10 +28,14 @@ config/icon="res://icon.png"
 
 SoundManager="*res://tscn/SoundManager.tscn"
 Checkpoint="*res://Checkpoint.gd"
+<<<<<<< Updated upstream
 <<<<<<<UpdatedupstreamNetwork="*res://Network.gd"
 Network="*res://Network.gd"
 <<<<<<<Updatedupstream<<<<<<<UpdatedupstreamNetwork="*res://Network.gd"
 SignalBus="*res://SignalBus.gd"
+=======
+<<<<<<<Updatedupstream<<<<<<<UpdatedupstreamNetwork="*res://Network.gd"
+>>>>>>> Stashed changes
 
 [editor]
 
