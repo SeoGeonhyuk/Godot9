@@ -17,6 +17,6 @@ func _process(delta):
 #		mils = 0
 		
 #	var time_passed = "%0.2d : %0.2d : %0.3d" %[mins,secs,mils]
-	text = "Player 1"
+	text = "Player 2"
 	
 #	pass

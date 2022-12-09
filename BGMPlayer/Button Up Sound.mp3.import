@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Button Up Sound.mp3-c0b79ed38a6dfc3149a1174e07d5a894.mp3str"
+
+[deps]
+
+source_file="res://BGMPlayer/Button Up Sound.mp3"
+dest_files=[ "res://.import/Button Up Sound.mp3-c0b79ed38a6dfc3149a1174e07d5a894.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

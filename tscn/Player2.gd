@@ -26,29 +26,29 @@ const gravity = 8
 const Max_speed = 300
 
 func _ready():
-	Checkpoint.last_position = get_parent().get_node("Player").global_position
+	Checkpoint.last_position = get_parent().get_node("Player2").global_position
 
 
 func get_input(delta) :
-	var right = Input.is_action_pressed('Player1_right')
-	var left = Input.is_action_pressed('Player1_left')
+	var right = Input.is_action_pressed('Player2_Right')
+	var left = Input.is_action_pressed('Player2_left')
 
 	if left:
 		velocity.x -= walk_speed * run_speed 
 		#velocity.x = max(velocity.x-jump_speed,-Max_jump)
 		animation.flip_h = false
-		animation.play("RunRight")
+		animation.play("RunLeft")
 	elif right:
 		velocity.x += walk_speed * run_speed
 		#velocity.x = min(velocity.x+run_speed,Max_speed)
 		animation.flip_h = true
-		animation.play("RunRight")
+		animation.play("RunLeft")
 	else:
 		animation.stop()
 		velocity.x = lerp(velocity.x,0,Air_Resistance)
 		
 		
-	if Input.is_action_just_released("Player1_Jump"):
+	if Input.is_action_just_released("Player2_Jump"):
 		jump_released = true
 		velocity += Vector2.DOWN * gravity * delta
 	if velocity.y > 0:
@@ -56,7 +56,7 @@ func get_input(delta) :
 	elif velocity.y < 0 && jump_released:
 		velocity += Vector2.DOWN * earth_gravity * low_jump_gravity_scale * delta
 	if on_floor:
-		if Input.is_action_just_pressed("Player1_Jump"):
+		if Input.is_action_just_pressed("Player2_Jump"):
 			SoundManager.Jump_sound.play()
 			ini_jump = jump_power 
 			velocity += Vector2.UP * jump_power* run_speed / 2
@@ -67,12 +67,11 @@ func get_input(delta) :
 	
 	
 	
-	if Input.is_action_pressed("Player1_Run"):
+	if Input.is_action_pressed("Player2_Run"):
 		run_speed = 2.2
 	else :
 		run_speed = 2
 
-	
 
 func _physics_process(delta):
 	
@@ -88,11 +87,11 @@ func _on_crowns_body_entered(body):
 	SignalBus.Player1Score += 1
 
 
-func _on_fall_Player1_die():
-	print(9999)
-	get_parent().get_node("Player").global_position = Checkpoint.last_position
 
-
-func _on_traps_Player1_die_trap():
+func _on_fall_Player2_die():
 	print(9999)
-	get_parent().get_node("Player").global_position = Checkpoint.last_position
+	get_parent().get_node("Player2").global_position = Checkpoint.last_position
+
+func _on_traps_Player2_die_trap():
+	print(9999)
+	get_parent().get_node("Player2").global_position = Checkpoint.last_position

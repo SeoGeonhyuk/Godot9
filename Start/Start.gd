@@ -1,7 +1,7 @@
 extends Control
 
 
-onready var bgm = $BGM
+onready var bgm = SoundManager.title_music_list
 
 func _ready():
 	bgm.play()
