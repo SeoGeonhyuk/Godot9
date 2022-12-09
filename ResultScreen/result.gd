@@ -39,17 +39,17 @@ func _ice_ended():
 	SignalBus.clear_changeSceneFrom()
 	nextScene = "finalScore"
 
-#func get_input(delta):
-#	if Input.is_action_pressed("ui_select"):
-#		print('s')
-#		if nextScene == "lava":
-#			get_tree().change_scene("res://lavaground.tscn")
-#		if nextScene == "ice":
-#			get_tree().change_scene("res://iceground.tscn")
-
 		
 #if lose:
 #	$win/win.visible = false
 #	$win/Crown.visible = false
 #	$lose/lose.visible = true
-#
+
+
+func _on_NextButton_pressed():
+	if nextScene == "lava":
+			get_tree().change_scene("res://lavaground.tscn")
+	if nextScene == "ice":
+			get_tree().change_scene("res://iceground.tscn")
+	if nextScene == "finalScore":
+			pass

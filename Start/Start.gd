@@ -19,7 +19,7 @@ func _on_MusicButton_pressed():
 
 
 func _on_PlayButton_pressed():
-	get_tree().change_scene("res://WorldSelection/WorldSelection.tscn")
+	get_tree().change_scene("res://jungleground.tscn")
 
 
 func _on_ExitButton_pressed():
