@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://assets/jungle tileset.png" type="Texture" id=1]
 [ext_resource path="res://assets/parallax background_jungle/plx-5.png" type="Texture" id=2]
@@ -12,7 +12,6 @@
 [ext_resource path="res://obstacles/crown.tscn" type="PackedScene" id=10]
 [ext_resource path="res://jungleground.gd" type="Script" id=11]
 [ext_resource path="res://tscn/fall.tscn" type="PackedScene" id=12]
-[ext_resource path="res://obstacles/obstacle.gd" type="Script" id=13]
 
 [sub_resource type="TileSet" id=1]
 0/name = "jungle tileset.png 0"
@@ -549,8 +548,12 @@ shape = SubResource( 31 )
 position = Vector2( -16, 64.5 )
 shape = SubResource( 32 )
 
+[node name="traps15" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1735, 439 )
+scale = Vector2( 0.033, 0.1 )
+
 [node name="obstacle" type="Node2D" parent="."]
-script = ExtResource( 13 )
+visible = false
 
 [node name="traps" parent="obstacle" instance=ExtResource( 7 )]
 position = Vector2( 4627, 502 )
@@ -618,7 +621,8 @@ position = Vector2( -47, 644 )
 [node name="crowns" parent="." instance=ExtResource( 10 )]
 position = Vector2( 447, 286 )
 
-[connection signal="die" from="obstacle" to="Player" method="_on_Node2D_die"]
-[connection signal="die" from="obstacle" to="Player" method="_on_obstacle_die"]
+[connection signal="die_trap" from="traps15" to="Player" method="_on_traps_die_trap"]
+[connection signal="die_trap" from="obstacle/traps" to="Player" method="_on_traps_die_trap"]
+[connection signal="die" from="obstacle/fall" to="Player" method="_on_fall_die"]
 [connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]
 [connection signal="body_entered" from="crowns" to="Player" method="_on_crowns_body_entered"]

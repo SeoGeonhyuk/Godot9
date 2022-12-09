@@ -85,15 +85,17 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity,Vector2(0,-1))
 
 
-func _on_Node2D_die():
-	print(9999)
-	get_parent().get_node("Player").global_position = Checkpoint.last_position
-
-
-func _on_obstacle_die():
-	print(9999)
-	get_parent().get_node("Player").global_position = Checkpoint.last_position
-	
-
 func _on_crowns_body_entered(body):
 	SignalBus.Player1Score += 1
+
+
+func _on_fall_die():
+	print(9999)
+	get_parent().get_node("Player").global_position = Checkpoint.last_position
+
+
+
+
+func _on_traps_die_trap():
+	print(9999)
+	get_parent().get_node("Player").global_position = Checkpoint.last_position

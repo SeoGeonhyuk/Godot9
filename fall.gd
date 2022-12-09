@@ -1,7 +1,6 @@
 extends Area2D
 
+signal die
 
 func _on_fall_body_entered(body):
-	#Obstacle.emit_signal("die")
-
-	pass
+	emit_signal("die")
