@@ -25,6 +25,7 @@ func _on_MusicButton_pressed():
 
 
 func _on_PlayButton_pressed():
+	bgm.stop()
 	get_tree().change_scene("res://jungleground.tscn")
 
 

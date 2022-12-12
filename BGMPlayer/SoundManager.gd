@@ -5,6 +5,7 @@ extends Node2D
 onready var music_list = $Music
 onready var title_music_list = $Music/TitleScreenBGM
 onready var GamePlay_music_list = $Music/GamePlayMusic
+onready var result_music_list = $Music/ResultMusic
 onready var Ending_music_list = $Music/EndingMusic
 
 onready var Jump_sound = $SoundEffect/jump

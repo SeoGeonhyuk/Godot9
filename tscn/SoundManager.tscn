@@ -16,6 +16,8 @@ stream = ExtResource( 1 )
 
 [node name="GamePlayMusic" type="AudioStreamPlayer" parent="Music"]
 
+[node name="ResultMusic" type="AudioStreamPlayer" parent="Music"]
+
 [node name="EndingMusic" type="AudioStreamPlayer" parent="Music"]
 stream = ExtResource( 4 )
 

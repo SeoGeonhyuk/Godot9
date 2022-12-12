@@ -2,8 +2,10 @@ extends Node2D
 
 signal score_added
 var nextScene
+onready var resultbgm = SoundManager.result_music_list
 
 func _ready():
+	resultbgm.play()
 	SignalBus.connect("jungle_ended", self, "_jungle_ended")
 	SignalBus.connect("lava_ended", self, "_lava_ended")
 	SignalBus.connect("ice_ended", self, "_ice_ended")
@@ -47,9 +49,13 @@ func _ice_ended():
 
 
 func _on_NextButton_pressed():
+	resultbgm.stop()
 	if nextScene == "lava":
 			get_tree().change_scene("res://lavaground.tscn")
 	if nextScene == "ice":
 			get_tree().change_scene("res://iceground.tscn")
 	if nextScene == "finalScore":
-			pass
+		if SignalBus.Player1Score > SignalBus.Player2Score:
+			get_tree().change_scene("res://ResultScreen/FinalScore1.tscn")
+		elif SignalBus.Player1Score < SignalBus.Player2Score:
+			get_tree().change_scene("res://ResultScreen/FinalScore2.tscn")

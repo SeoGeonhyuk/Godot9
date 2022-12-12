@@ -142,7 +142,7 @@ collision_layer = 2
 collision_mask = 1
 
 [node name="crowns" parent="." instance=ExtResource( 8 )]
-position = Vector2( 6709, 514 )
+position = Vector2( 429, 426 )
 
 [connection signal="body_entered" from="flag" to="flag" method="_on_flag_body_entered"]
 [connection signal="bounce" from="balls" to="Player" method="_on_balls_bounce"]
