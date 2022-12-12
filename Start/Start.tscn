@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Start/startscreen.png" type="Texture" id=1]
 [ext_resource path="res://Start/p1.png" type="Texture" id=2]
@@ -9,7 +9,6 @@
 [ext_resource path="res://Start/audioOff.png" type="Texture" id=7]
 [ext_resource path="res://Start/audioOn.png" type="Texture" id=8]
 [ext_resource path="res://Start/Start.gd" type="Script" id=9]
-[ext_resource path="res://BGMPlayer/Imagine Dragons, twocolors-01-Bones (twocolors Remix).mp3" type="AudioStream" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 6 )
@@ -96,23 +95,19 @@ text = "Exit"
 margin_right = 40.0
 margin_bottom = 40.0
 
-[node name="AudioOn" type="Sprite" parent="Music"]
-position = Vector2( 89, 516 )
-texture = ExtResource( 8 )
-
-[node name="AudioOff" type="Sprite" parent="Music"]
-visible = false
-position = Vector2( 89, 517 )
-texture = ExtResource( 7 )
-
-[node name="MusicButton" type="MenuButton" parent="Music"]
+[node name="MusicButton" type="TextureButton" parent="Music"]
 margin_left = 52.0
 margin_top = 479.0
 margin_right = 127.0
 margin_bottom = 558.0
 
-[node name="BGM" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 10 )
+[node name="AudioOn" type="Sprite" parent="Music"]
+position = Vector2( 89, 516 )
+texture = ExtResource( 8 )
+
+[node name="AudioOff" type="Sprite" parent="Music"]
+position = Vector2( 89, 516 )
+texture = ExtResource( 7 )
 
 [connection signal="pressed" from="Play/PlayButton" to="." method="_on_PlayButton_pressed"]
 [connection signal="pressed" from="Exit/ExitButton" to="." method="_on_ExitButton_pressed"]

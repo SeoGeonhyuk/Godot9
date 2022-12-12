@@ -2,6 +2,9 @@ extends KinematicBody2D
 
 onready var animation = $AnimatedSprite
 var velocity = Vector2().normalized()
+#signal bounce
+var bounceBool = false
+signal bounce
 
 #var - speed
 export (int) var run_speed = 2
@@ -88,6 +91,16 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity,Vector2(0,-1))
 
+#ball bounce
+	var collision = move_and_collide(velocity * delta *0.1 )
+	if collision:
+		if collision.collider.name == "balls":
+			print("d")
+			collision = move_and_collide(velocity * delta)
+			velocity = velocity.bounce(collision.normal)
+			
+			
+
 
 func _on_crowns_body_entered(body):
 	SignalBus.Player1Score += 1
@@ -102,3 +115,14 @@ func _on_traps_Player1_die_trap():
 		print(9999)
 		get_parent().get_node("Player").global_position = Checkpoint.last_position
 	else : shield -= 1
+
+
+
+func _on_balls_body_entered(body):
+	bounceBool = false
+	emit_signal("bounce")
+	print(body)
+	bounceBool = true
+
+func _on_balls_body_exited(body):
+	bounceBool = false

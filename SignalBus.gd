@@ -6,8 +6,11 @@ signal jungle_ended
 signal lava_ended
 signal ice_ended
 
+var Player1win = false
+var Player2win = false
 var Player1Score = 0
 var Player2Score = 0
+
 var changeSceneFrom = null
 
 func arrive_result_scene(changeSceneFrom):

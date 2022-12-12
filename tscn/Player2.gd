@@ -87,6 +87,13 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity,Vector2(0,-1))
 
+#ball bounce
+	var collision = move_and_collide(velocity * delta *0.1 )
+	if collision:
+		if collision.collider.name == "balls":
+			print("d")
+			collision = move_and_collide(velocity * delta)
+			velocity = velocity.bounce(collision.normal)
 
 func _on_crowns_body_entered(body):
 	SignalBus.Player1Score += 1
@@ -94,7 +101,9 @@ func _on_crowns_body_entered(body):
 
 
 func _on_fall_Player2_die():
-	get_parent().get_node("Player2").global_position = Checkpoint.last_position	else : shield -= 1
+	if shield == 0:
+		get_parent().get_node("Player2").global_position = Checkpoint.last_position	
+	else : shield -= 1
 	
 func _on_traps_Player2_die_trap():
 	if shield == 0:

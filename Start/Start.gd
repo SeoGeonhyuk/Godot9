@@ -2,19 +2,25 @@ extends Control
 
 
 onready var bgm = SoundManager.title_music_list
+var musicPaused = false
+var temp = 0
 
 func _ready():
 	bgm.play()
 	
 func _on_MusicButton_pressed():
-	if bgm.is_playing():
+	if musicPaused == false:
+		temp = bgm.get_playback_position()
 		$Music/AudioOn.visible = false
 		$Music/AudioOff.visible = true
 		bgm.stop()
+		musicPaused = true
 	else:
 		$Music/AudioOn.visible = true
 		$Music/AudioOff.visible = false
-		bgm.play()
+		bgm.play(temp)
+		musicPaused = false
+
 
 
 
