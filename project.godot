@@ -9,7 +9,7 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "EditorVCSInterface",
+"base": "",
 "class": "GitAPI",
 "language": "NativeScript",
 "path": "res://addons/godot-git-plugin/git_api.gdns"
@@ -28,14 +28,11 @@ config/icon="res://icon.png"
 
 SoundManager="*res://tscn/SoundManager.tscn"
 Checkpoint="*res://Checkpoint.gd"
-<<<<<<< Updated upstream
 <<<<<<<UpdatedupstreamNetwork="*res://Network.gd"
 Network="*res://Network.gd"
 <<<<<<<Updatedupstream<<<<<<<UpdatedupstreamNetwork="*res://Network.gd"
 SignalBus="*res://SignalBus.gd"
-=======
-<<<<<<<Updatedupstream<<<<<<<UpdatedupstreamNetwork="*res://Network.gd"
->>>>>>> Stashed changes
+Fall="*res://fall.gd"
 
 [editor]
 
@@ -78,7 +75,3 @@ left={
 [physics]
 
 common/enable_pause_aware_picking=true
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"
