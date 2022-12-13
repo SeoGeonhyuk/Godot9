@@ -133,7 +133,11 @@ smoothing_enabled = true
 [node name="obstacle" type="Node2D" parent="."]
 
 [node name="traps" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 4627, 502 )
+position = Vector2( 60, 465 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps16" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 871, 409 )
 scale = Vector2( 0.033, 0.1 )
 
 [node name="traps15" parent="obstacle" instance=ExtResource( 7 )]
@@ -210,6 +214,8 @@ position = Vector2( 714, 455 )
 
 [connection signal="Player1_die_trap" from="obstacle/traps" to="Player" method="_on_traps_Player1_die_trap"]
 [connection signal="Player2_die_trap" from="obstacle/traps" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps16" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps16" to="Player2" method="_on_traps_Player2_die_trap"]
 [connection signal="Player1_die_trap" from="obstacle/traps15" to="Player" method="_on_traps_Player1_die_trap"]
 [connection signal="Player2_die_trap" from="obstacle/traps15" to="Player2" method="_on_traps_Player2_die_trap"]
 [connection signal="Player1_die" from="obstacle/fall" to="Player" method="_on_fall_Player1_die"]

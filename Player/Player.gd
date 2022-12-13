@@ -108,12 +108,11 @@ func _on_crowns_body_entered(body):
 
 func _on_fall_Player1_die():
 	get_parent().get_node("Player").global_position = CheckP.Player1_last_position
-
+	velocity = Vector2().normalized()
 
 func _on_traps_Player1_die_trap():
 	if shield == 0:
 		print(9999)
 		get_parent().get_node("Player").global_position = CheckP.Player1_last_position
+		velocity = Vector2().normalized()
 	else : shield -= 1
-
-

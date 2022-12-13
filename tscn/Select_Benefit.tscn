@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Start/kenvector_future.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://tscn/Select_Benefit.gd" type="Script" id=2]
 [ext_resource path="res://Start/ButtonYellow.png" type="Texture" id=3]
+[ext_resource path="res://ResultScreen/sword.png" type="Texture" id=4]
+[ext_resource path="res://ResultScreen/speed.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
@@ -70,14 +72,11 @@ margin_left = 95.0
 margin_top = -63.0
 margin_right = 95.0
 margin_bottom = -23.0
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="ButtonYellow" type="Sprite" parent="Speed"]
-position = Vector2( -9.16516, 64 )
-scale = Vector2( 0.297707, 0.289402 )
-texture = ExtResource( 3 )
+position = Vector2( -9, 39 )
+scale = Vector2( 0.156942, 0.152564 )
+texture = ExtResource( 5 )
 
 [node name="SpeedButton" type="MenuButton" parent="Speed"]
 margin_left = -56.1652
@@ -104,8 +103,8 @@ __meta__ = {
 
 [node name="ButtonYellow" type="Sprite" parent="Kill"]
 position = Vector2( -9.16516, 64 )
-scale = Vector2( 0.297707, 0.289402 )
-texture = ExtResource( 3 )
+scale = Vector2( 1.50688, 1.46484 )
+texture = ExtResource( 4 )
 
 [node name="KillButton" type="MenuButton" parent="Kill"]
 margin_left = -56.1652
@@ -115,7 +114,7 @@ margin_bottom = 97.0
 focus_mode = 2
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Speed Up"
+text = "Kill"
 
 [node name="Shield" type="Control" parent="."]
 anchor_left = 0.5
