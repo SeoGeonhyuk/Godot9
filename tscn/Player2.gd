@@ -129,3 +129,11 @@ func _on_lava_trap_Player2_die_trap():
 		get_parent().get_node("Player2").global_position = CheckP.Player2_last_position
 		velocity = Vector2().normalized()
 	else : shield -= 1
+
+
+func _on_KinematicBody2D_Player2_die_enemy():
+	if shield == 0:
+		print(9999)
+		get_parent().get_node("Player2").global_position = CheckP.Player2_last_position
+		velocity = Vector2().normalized()
+	else : shield -= 1
