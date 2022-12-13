@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/jungle tileset.png" type="Texture" id=1]
 [ext_resource path="res://assets/parallax background_jungle/plx-5.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://jungleground.gd" type="Script" id=11]
 [ext_resource path="res://tscn/fall.tscn" type="PackedScene" id=12]
 [ext_resource path="res://tscn/Player2.tscn" type="PackedScene" id=13]
+[ext_resource path="res://tscn/Checkpoint.tscn" type="PackedScene" id=14]
 
 [sub_resource type="ConvexPolygonShape2D" id=33]
 points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
@@ -129,14 +130,14 @@ drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 smoothing_enabled = true
 
-[node name="traps15" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1735, 439 )
-scale = Vector2( 0.033, 0.1 )
-
 [node name="obstacle" type="Node2D" parent="."]
 
 [node name="traps" parent="obstacle" instance=ExtResource( 7 )]
 position = Vector2( 4627, 502 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps15" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 2266, 440 )
 scale = Vector2( 0.033, 0.1 )
 
 [node name="traps2" parent="obstacle" instance=ExtResource( 7 )]
@@ -204,6 +205,15 @@ position = Vector2( 447, 286 )
 [node name="Player2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 246, 136 )
 
+[node name="Area2D" parent="." instance=ExtResource( 14 )]
+position = Vector2( 714, 455 )
+
+[connection signal="Player1_die_trap" from="obstacle/traps" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps15" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps15" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die" from="obstacle/fall" to="Player" method="_on_fall_Player1_die"]
+[connection signal="Player2_die" from="obstacle/fall" to="Player2" method="_on_fall_Player2_die"]
 [connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]
 [connection signal="body_entered" from="crowns" to="Player" method="_on_crowns_body_entered"]
 [connection signal="body_entered" from="crowns" to="Player2" method="_on_crowns_body_entered"]

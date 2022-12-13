@@ -31,7 +31,7 @@ var Jump_ben = false
 var Run_ben = false
 
 func _ready():
-	Checkpoint.last_position = get_parent().get_node("Player2").global_position
+	CheckP.Player2_last_position = get_parent().get_node("Player2").global_position
 
 
 func get_input(delta) :
@@ -102,11 +102,11 @@ func _on_crowns_body_entered(body):
 
 func _on_fall_Player2_die():
 	if shield == 0:
-		get_parent().get_node("Player2").global_position = Checkpoint.last_position	
+		get_parent().get_node("Player2").global_position = CheckP.Player2_last_position	
 	else : shield -= 1
 	
 func _on_traps_Player2_die_trap():
 	if shield == 0:
 		print(9999)
-		get_parent().get_node("Player2").global_position = Checkpoint.last_position
+		get_parent().get_node("Player2").global_position = CheckP.Player2_last_position
 	else : shield -= 1
