@@ -209,7 +209,7 @@ position = Vector2( 447, 286 )
 [node name="Player2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 246, 136 )
 
-[node name="Area2D" parent="." instance=ExtResource( 14 )]
+[node name="flag" parent="." instance=ExtResource( 14 )]
 position = Vector2( 714, 455 )
 
 [connection signal="Player1_die_trap" from="obstacle/traps" to="Player" method="_on_traps_Player1_die_trap"]
