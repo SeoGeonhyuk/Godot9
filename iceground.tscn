@@ -58,62 +58,6 @@ tile_data = PoolIntArray( -1048577, 0, 0, -983041, 0, 0, -917505, 0, 0, -851969,
 [node name="fall" parent="." instance=ExtResource( 4 )]
 position = Vector2( 12, 626 )
 
-[node name="traps16" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4723, 531 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4755, 531 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4875, 531 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps4" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4809, 531 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4842, 531 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps6" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4787, 531 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps7" parent="." instance=ExtResource( 5 )]
-position = Vector2( 5200, 441 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps8" parent="." instance=ExtResource( 5 )]
-position = Vector2( 5200, 469 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps9" parent="." instance=ExtResource( 5 )]
-position = Vector2( 5681, 467 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps10" parent="." instance=ExtResource( 5 )]
-position = Vector2( 5713, 467 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps11" parent="." instance=ExtResource( 5 )]
-position = Vector2( 5776, 436 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps12" parent="." instance=ExtResource( 5 )]
-position = Vector2( 5904, 435 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps13" parent="." instance=ExtResource( 5 )]
-position = Vector2( 6031, 435 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps14" parent="." instance=ExtResource( 5 )]
-position = Vector2( 6480, 467 )
-scale = Vector2( 0.033, 0.1 )
-
 [node name="balls" parent="." instance=ExtResource( 7 )]
 position = Vector2( 320, 416 )
 scale = Vector2( 0.1, 0.1 )
@@ -121,7 +65,7 @@ collision_layer = 2
 collision_mask = 1
 
 [node name="crowns" parent="." instance=ExtResource( 8 )]
-position = Vector2( 672, 399 )
+position = Vector2( 8216, 506 )
 
 [node name="Player2" parent="." instance=ExtResource( 10 )]
 position = Vector2( 205, 279 )
@@ -141,10 +85,68 @@ drag_margin_v_enabled = true
 smoothing_enabled = true
 
 [node name="flag" parent="." instance=ExtResource( 6 )]
-position = Vector2( 536, 467 )
+position = Vector2( 2151, 455 )
+
+[node name="flag2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4051, 485 )
+
+[node name="flag3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 6596, 512 )
 
 [node name="ice_trap" parent="." instance=ExtResource( 5 )]
-position = Vector2( 222, 465 )
+position = Vector2( 4720, 531 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4753, 531 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap7" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4786, 531 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap8" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4819, 531 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap9" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4852, 531 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap10" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4881, 531 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap11" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5200, 468 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap12" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5201, 440 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap13" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5711, 468 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap15" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5807, 404 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap16" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5905, 436 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap17" parent="." instance=ExtResource( 5 )]
+position = Vector2( 6032, 435 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap18" parent="." instance=ExtResource( 5 )]
+position = Vector2( 6480, 469 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="ice_trap14" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5680, 468 )
 scale = Vector2( 0.033, 0.1 )
 
 [node name="ice_trap2" parent="." instance=ExtResource( 5 )]
@@ -164,13 +166,45 @@ position = Vector2( 7896, 432 )
 scale = Vector2( 0.033, 0.1 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 11 )]
-position = Vector2( 645, 447 )
+position = Vector2( 2477, 450 )
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 4366, 485 )
+
+[node name="KinematicBody2D3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 6757, 511 )
 
 [connection signal="Player1_die" from="fall" to="Player" method="_on_fall_Player1_die"]
 [connection signal="Player2_die" from="fall" to="Player2" method="_on_fall_Player2_die"]
 [connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]
 [connection signal="Player1_die_trap" from="ice_trap" to="Player" method="_on_ice_trap_Player1_die_trap"]
 [connection signal="Player2_die_trap" from="ice_trap" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap6" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap6" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap7" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap7" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap8" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap8" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap9" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap9" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap10" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap10" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap11" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap11" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap12" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap12" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap13" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap13" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap15" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap15" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap16" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap16" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap17" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap17" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap18" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap18" to="Player2" method="_on_ice_trap_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="ice_trap14" to="Player" method="_on_ice_trap_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="ice_trap14" to="Player2" method="_on_ice_trap_Player2_die_trap"]
 [connection signal="Player1_die_trap" from="ice_trap2" to="Player" method="_on_ice_trap_Player1_die_trap"]
 [connection signal="Player2_die_trap" from="ice_trap2" to="Player2" method="_on_ice_trap_Player2_die_trap"]
 [connection signal="Player1_die_trap" from="ice_trap3" to="Player" method="_on_ice_trap_Player1_die_trap"]
@@ -181,3 +215,7 @@ position = Vector2( 645, 447 )
 [connection signal="Player2_die_trap" from="ice_trap5" to="Player2" method="_on_ice_trap_Player2_die_trap"]
 [connection signal="Player1_die_enemy" from="KinematicBody2D" to="Player" method="_on_KinematicBody2D_Player1_die_enemy"]
 [connection signal="Player2_die_enemy" from="KinematicBody2D" to="Player2" method="_on_KinematicBody2D_Player2_die_enemy"]
+[connection signal="Player1_die_enemy" from="KinematicBody2D2" to="Player" method="_on_KinematicBody2D_Player1_die_enemy"]
+[connection signal="Player2_die_enemy" from="KinematicBody2D2" to="Player2" method="_on_KinematicBody2D_Player2_die_enemy"]
+[connection signal="Player1_die_enemy" from="KinematicBody2D3" to="Player" method="_on_KinematicBody2D_Player1_die_enemy"]
+[connection signal="Player2_die_enemy" from="KinematicBody2D3" to="Player2" method="_on_KinematicBody2D_Player2_die_enemy"]

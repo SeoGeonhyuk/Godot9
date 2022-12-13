@@ -125,7 +125,7 @@ format = 1
 tile_data = PoolIntArray( -1048577, 0, 0, -983041, 0, 0, -917505, 0, 0, -851969, 0, 0, -786433, 0, 0, -720897, 0, 0, -655361, 0, 0, -589825, 0, 0, -524289, 0, 0, -458753, 0, 0, -393217, 0, 0, -327681, 0, 0, -262145, 0, 0, -196609, 0, 0, -262029, 1, 0, -131074, 0, 0, -131073, 0, 0, -196494, 1, 0, -65539, 0, 0, -65538, 0, 0, -65537, 0, 0, -130959, 1, 0, -3, 0, 0, -2, 0, 0, -1, 0, 0, -65424, 1, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 111, 1, 0, 131069, 0, 0, 131070, 0, 0, 131071, 0, 0, 65646, 1, 0, 196605, 0, 0, 196606, 0, 0, 196607, 0, 0, 131181, 1, 0, 131241, 1, 0, 262141, 0, 0, 262142, 0, 0, 262143, 0, 0, 196716, 1, 0, 196777, 1, 0, 327677, 0, 0, 327678, 0, 0, 327679, 0, 0, 262251, 1, 0, 262313, 1, 0, 393213, 0, 0, 393214, 0, 0, 393215, 0, 0, 327786, 1, 0, 327849, 1, 0, 458749, 0, 0, 458750, 0, 0, 458751, 0, 0, 393321, 1, 0, 393385, 1, 0, 524285, 0, 0, 524286, 0, 0, 524287, 0, 0, 458842, 1, 0, 458856, 1, 0, 458921, 1, 0, 589821, 0, 0, 589822, 0, 0, 589823, 0, 0, 524378, 1, 0, 524391, 1, 0, 524455, 1, 0, 524456, 1, 0, 655358, 0, 0, 655359, 0, 0, 589860, 1, 0, 589861, 1, 0, 589912, 1, 0, 589914, 1, 0, 589926, 1, 0, 720894, 0, 0, 720895, 0, 0, 655448, 1, 0, 655450, 1, 0, 655461, 1, 0, 655529, 1, 0, 786430, 0, 0, 786431, 0, 0, 720908, 0, 0, 720909, 0, 0, 720910, 0, 0, 720911, 0, 0, 720925, 1, 0, 720926, 1, 0, 720984, 1, 0, 720996, 1, 0, 721061, 1, 0, 721065, 1, 0, 851966, 0, 0, 851967, 0, 0, 786443, 0, 0, 786448, 0, 0, 786465, 1, 0, 786466, 1, 0, 786471, 1, 0, 786472, 1, 0, 786522, 1, 0, 786531, 1, 0, 786598, 0, 0, 786599, 0, 0, 786600, 0, 0, 786602, 0, 0, 917502, 0, 0, 917503, 0, 0, 851978, 0, 0, 851985, 0, 0, 851994, 1, 0, 851995, 1, 0, 852056, 1, 0, 852058, 1, 0, 852066, 1, 0, 852131, 1, 0, 852139, 0, 0, 852140, 0, 0, 852144, 1, 0, 852146, 1, 0, 852148, 1, 0, 852150, 1, 0, 852152, 1, 0, 852154, 1, 0, 852156, 1, 0, 852198, 1, 0, 983038, 0, 0, 983039, 0, 0, 917513, 0, 0, 917522, 0, 0, 917592, 1, 0, 917594, 1, 0, 917601, 1, 0, 917659, 1, 0, 917677, 1, 0, 917680, 1, 0, 917681, 1, 0, 917683, 1, 0, 917685, 1, 0, 917687, 1, 0, 917689, 1, 0, 917691, 1, 0, 917694, 1, 0, 917720, 1, 0, 917721, 1, 0, 917729, 1, 0, 1048574, 0, 0, 1048575, 0, 0, 983040, 0, 0, 983041, 0, 0, 983042, 0, 0, 983043, 0, 0, 983044, 0, 0, 983045, 0, 0, 983046, 0, 0, 983047, 0, 0, 983048, 0, 0, 983059, 0, 0, 983060, 0, 0, 983061, 0, 0, 983062, 0, 0, 983063, 0, 0, 983064, 0, 0, 983076, 1, 0, 983077, 1, 0, 983082, 0, 0, 983083, 0, 0, 983084, 0, 0, 983085, 0, 0, 983086, 0, 0, 983087, 0, 0, 983088, 0, 0, 983089, 0, 0, 983090, 0, 0, 983091, 0, 0, 983092, 0, 0, 983093, 0, 0, 983094, 0, 0, 983095, 0, 0, 983096, 0, 0, 983097, 0, 0, 983098, 0, 0, 983099, 0, 0, 983100, 0, 0, 983101, 0, 0, 983102, 0, 0, 983103, 0, 0, 983104, 0, 0, 983105, 0, 0, 983106, 0, 0, 983107, 0, 0, 983108, 0, 0, 983109, 0, 0, 983110, 0, 0, 983111, 0, 0, 983112, 0, 0, 983113, 0, 0, 983115, 0, 0, 983117, 0, 0, 983119, 0, 0, 983121, 0, 0, 983123, 0, 0, 983124, 0, 0, 983125, 0, 0, 983126, 0, 0, 983127, 0, 0, 983129, 0, 0, 983131, 0, 0, 983132, 0, 0, 983133, 0, 0, 983134, 0, 0, 983135, 0, 0, 983136, 0, 0, 983171, 0, 0, 983172, 0, 0, 983173, 0, 0, 983174, 0, 0, 983175, 0, 0, 983176, 0, 0, 983177, 0, 0, 983178, 0, 0, 983179, 0, 0, 983180, 0, 0, 983181, 0, 0, 983182, 0, 0, 983183, 0, 0, 983190, 0, 0, 983197, 1, 0, 983199, 1, 0, 983201, 1, 0, 983214, 1, 0, 983215, 1, 0, 983239, 1, 0, 1114110, 0, 0, 1114111, 0, 0, 1048650, 0, 0, 1048652, 0, 0, 1048654, 0, 0, 1048656, 0, 0, 1048658, 0, 0, 1048720, 0, 0, 1048721, 0, 0, 1048722, 0, 0, 1048723, 0, 0, 1048724, 0, 0, 1048725, 0, 0, 1048727, 0, 0, 1048729, 1, 0, 1048730, 1, 0, 1048768, 1, 0, 1048789, 1, 0, 1048790, 1, 0, 1048803, 1, 0, 1048808, 1, 0, 1179647, 0, 0, 1114314, 0, 0, 1114315, 0, 0, 1114316, 0, 0, 1114317, 0, 0, 1114318, 0, 0, 1114319, 0, 0, 1114320, 0, 0, 1114321, 0, 0, 1114322, 0, 0, 1114323, 0, 0, 1114334, 1, 0, 1114335, 1, 0, 1114336, 1, 0, 1114345, 0, 0, 1114346, 0, 0, 1114347, 0, 0, 1114348, 0, 0, 1114349, 0, 0, 1114350, 0, 0, 1114351, 0, 0, 1114352, 0, 0, 1114353, 0, 0, 1245183, 0, 0, 1179842, 1, 0, 1179843, 1, 0, 1179877, 1, 0, 1310719, 0, 0, 1245403, 1, 0, 1245404, 1, 0, 1376255, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 8 )]
-position = Vector2( 6232, 384 )
+position = Vector2( 166, 207 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -141,67 +141,83 @@ smoothing_enabled = true
 [node name="obstacle" type="Node2D" parent="."]
 
 [node name="traps" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 60, 465 )
-scale = Vector2( 0.033, 0.1 )
-
-[node name="traps16" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 871, 409 )
+position = Vector2( 2511, 499 )
 scale = Vector2( 0.033, 0.1 )
 
 [node name="traps15" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 2266, 440 )
+position = Vector2( 2384, 500 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps2" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 4659, 502 )
+[node name="traps17" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 2639, 500 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps3" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 4779, 502 )
+[node name="traps18" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4624, 502 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps4" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 4713, 502 )
+[node name="traps19" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4656, 502 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps5" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 4746, 502 )
+[node name="traps20" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4689, 502 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps6" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 4691, 502 )
+[node name="traps21" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4720, 502 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps7" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 5104, 442 )
+[node name="traps22" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4752, 502 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps8" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 5104, 470 )
+[node name="traps23" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 4784, 502 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps9" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 5585, 468 )
+[node name="traps24" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5106, 438 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps10" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 5617, 468 )
+[node name="traps26" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5584, 472 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps11" parent="obstacle" instance=ExtResource( 7 )]
+[node name="traps27" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5615, 472 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps28" parent="obstacle" instance=ExtResource( 7 )]
 position = Vector2( 5680, 437 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps12" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 5808, 436 )
+[node name="traps29" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5808, 438 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps13" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 5935, 436 )
+[node name="traps30" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5936, 438 )
 scale = Vector2( 0.033, 0.1 )
 
-[node name="traps14" parent="obstacle" instance=ExtResource( 7 )]
-position = Vector2( 6384, 468 )
+[node name="traps31" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 6160, 501 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps32" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 6384, 469 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps33" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 7187, 533 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps25" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 5106, 468 )
+scale = Vector2( 0.033, 0.1 )
+
+[node name="traps16" parent="obstacle" instance=ExtResource( 7 )]
+position = Vector2( 878, 409 )
 scale = Vector2( 0.033, 0.1 )
 
 [node name="balls" parent="obstacle" instance=ExtResource( 9 )]
@@ -212,33 +228,92 @@ scale = Vector2( 0.1, 0.1 )
 position = Vector2( -47, 644 )
 
 [node name="crowns" parent="." instance=ExtResource( 10 )]
-position = Vector2( 447, 286 )
+position = Vector2( 7714, 513 )
 
 [node name="Player2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 246, 136 )
 
 [node name="flag" parent="." instance=ExtResource( 14 )]
-position = Vector2( 714, 455 )
+position = Vector2( 1373, 452 )
 
-[node name="traps" parent="." instance=ExtResource( 7 )]
-position = Vector2( 7184, 528 )
-scale = Vector2( 0.033, 0.1 )
+[node name="flag2" parent="." instance=ExtResource( 14 )]
+position = Vector2( 4239, 449 )
+
+[node name="flag3" parent="." instance=ExtResource( 14 )]
+position = Vector2( 6498, 514 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 15 )]
-position = Vector2( 6599, 501 )
+position = Vector2( 6691, 514 )
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 15 )]
+position = Vector2( 4514, 446 )
+
+[node name="KinematicBody2D3" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1624, 434 )
+
+[node name="KinematicBody2D4" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1844, 432 )
+
+[node name="KinematicBody2D5" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1962, 432 )
+
+[node name="KinematicBody2D6" parent="." instance=ExtResource( 15 )]
+position = Vector2( 2074, 436 )
 
 [connection signal="Player1_die_trap" from="obstacle/traps" to="Player" method="_on_traps_Player1_die_trap"]
 [connection signal="Player2_die_trap" from="obstacle/traps" to="Player2" method="_on_traps_Player2_die_trap"]
-[connection signal="Player1_die_trap" from="obstacle/traps16" to="Player" method="_on_traps_Player1_die_trap"]
-[connection signal="Player2_die_trap" from="obstacle/traps16" to="Player2" method="_on_traps_Player2_die_trap"]
 [connection signal="Player1_die_trap" from="obstacle/traps15" to="Player" method="_on_traps_Player1_die_trap"]
 [connection signal="Player2_die_trap" from="obstacle/traps15" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps17" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps17" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps18" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps18" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps19" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps19" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps20" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps20" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps21" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps21" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps22" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps22" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps23" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps23" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps24" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps24" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps26" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps26" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps27" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps27" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps28" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps28" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps29" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps29" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps30" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps30" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps31" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps31" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps32" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps32" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps33" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps33" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps25" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps25" to="Player2" method="_on_traps_Player2_die_trap"]
+[connection signal="Player1_die_trap" from="obstacle/traps16" to="Player" method="_on_traps_Player1_die_trap"]
+[connection signal="Player2_die_trap" from="obstacle/traps16" to="Player2" method="_on_traps_Player2_die_trap"]
 [connection signal="Player1_die" from="obstacle/fall" to="Player" method="_on_fall_Player1_die"]
 [connection signal="Player2_die" from="obstacle/fall" to="Player2" method="_on_fall_Player2_die"]
 [connection signal="body_entered" from="crowns" to="." method="_on_crowns_body_entered"]
 [connection signal="body_entered" from="crowns" to="Player" method="_on_crowns_body_entered"]
 [connection signal="body_entered" from="crowns" to="Player2" method="_on_crowns_body_entered"]
-[connection signal="Player1_die_trap" from="traps" to="Player" method="_on_traps_Player1_die_trap"]
-[connection signal="Player2_die_trap" from="traps" to="Player2" method="_on_traps_Player2_die_trap"]
 [connection signal="Player1_die_enemy" from="KinematicBody2D" to="Player" method="_on_KinematicBody2D_Player1_die_enemy"]
 [connection signal="Player2_die_enemy" from="KinematicBody2D" to="Player2" method="_on_KinematicBody2D_Player2_die_enemy"]
+[connection signal="Player1_die_enemy" from="KinematicBody2D2" to="Player" method="_on_KinematicBody2D_Player1_die_enemy"]
+[connection signal="Player2_die_enemy" from="KinematicBody2D2" to="Player2" method="_on_KinematicBody2D_Player2_die_enemy"]
+[connection signal="Player1_die_enemy" from="KinematicBody2D3" to="Player" method="_on_KinematicBody2D_Player1_die_enemy"]
+[connection signal="Player2_die_enemy" from="KinematicBody2D3" to="Player2" method="_on_KinematicBody2D_Player2_die_enemy"]
+[connection signal="Player1_die_enemy" from="KinematicBody2D4" to="Player" method="_on_KinematicBody2D_Player1_die_enemy"]
+[connection signal="Player2_die_enemy" from="KinematicBody2D4" to="Player2" method="_on_KinematicBody2D_Player2_die_enemy"]
+[connection signal="Player1_die_enemy" from="KinematicBody2D5" to="Player" method="_on_KinematicBody2D_Player1_die_enemy"]
+[connection signal="Player2_die_enemy" from="KinematicBody2D5" to="Player2" method="_on_KinematicBody2D_Player2_die_enemy"]
+[connection signal="Player1_die_enemy" from="KinematicBody2D6" to="Player" method="_on_KinematicBody2D_Player1_die_enemy"]
+[connection signal="Player2_die_enemy" from="KinematicBody2D6" to="Player2" method="_on_KinematicBody2D_Player2_die_enemy"]
