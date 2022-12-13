@@ -96,7 +96,7 @@ func _physics_process(delta):
 			velocity = velocity.bounce(collision.normal)
 
 func _on_crowns_body_entered(body):
-	SignalBus.Player1Score += 1
+	SignalBus.Player2win = true
 
 
 

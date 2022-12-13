@@ -4,7 +4,7 @@ onready var animation = $AnimatedSprite
 var velocity = Vector2().normalized()
 #signal bounce
 var bounceBool = false
-signal bounce
+
 
 #var - speed
 export (int) var run_speed = 2
@@ -103,7 +103,7 @@ func _physics_process(delta):
 
 
 func _on_crowns_body_entered(body):
-	SignalBus.Player1Score += 1
+	SignalBus.Player1win = true
 
 
 func _on_fall_Player1_die():
@@ -117,12 +117,3 @@ func _on_traps_Player1_die_trap():
 	else : shield -= 1
 
 
-
-func _on_balls_body_entered(body):
-	bounceBool = false
-	emit_signal("bounce")
-	print(body)
-	bounceBool = true
-
-func _on_balls_body_exited(body):
-	bounceBool = false

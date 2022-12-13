@@ -55,6 +55,14 @@ tile_data = PoolIntArray( -1048577, 0, 0, -983041, 0, 0, -917505, 0, 0, -851969,
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 184, 396 )
+run_speed = null
+walk_speed = null
+fall_gravity_scale = null
+low_jump_gravity_scale = null
+jump_power = null
+ini_jump = null
+gravity_scale = null
+Air_Resistance = null
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -136,13 +144,13 @@ position = Vector2( 6480, 467 )
 scale = Vector2( 0.033, 0.1 )
 
 [node name="balls" parent="." instance=ExtResource( 7 )]
-position = Vector2( 6418, 545 )
+position = Vector2( 320, 416 )
 scale = Vector2( 0.1, 0.1 )
 collision_layer = 2
 collision_mask = 1
 
 [node name="crowns" parent="." instance=ExtResource( 8 )]
-position = Vector2( 429, 426 )
+position = Vector2( 672, 399 )
 
 [connection signal="body_entered" from="flag" to="flag" method="_on_flag_body_entered"]
 [connection signal="bounce" from="balls" to="Player" method="_on_balls_bounce"]
